@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120150803-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120150803-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is an admission aggregate calculator for the University of Lagos.">
+    <meta name="author" content="Oukoya Modesayo">
+    <meta name="language" content="English">
+    <meta name="keywords" content="yabatech,yaba college of technology, polytechnic, of, lagos, admission aggregate calculator, admission, aggregate, calculator, unilag-calc">
+    <title>YCT Aggregate Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/reset.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+  </head>
+  <body>
+    
+
+    <div id="container">
+      <header>
+        <h1>YCT Aggregate Calculator</h1>
+        <img src="images/img1.png" alt="backpack" class="rounded-corners">
+       <div id="subtext"> <h2> Use this to check your aggregate score while waiting for the official cut off mark and your compiled aggregate score by yabatech to have an idea on what your aggregate score will be.</h2></div>
+      </header>
+      <main>
+        <div id="background"></div>
+        <div class="wrap">
+          <div id="back" class="card at-back">
+            <h2>Your Aggregate: </h2>
+            <div id="circle">
+              <div id="inner-circle">
+              </div>
+            </div>
+            <form id="result">
+              <input type="submit" value="Reset" id="reset" class="input activate">
+            </form>
+          </div>
+          <div id="front" class="card">
+            <h2>Input Your Details</h2>
+            <form id="details">
+              <label for="utme-input">
+                U.T.M.E Score
+              </label>
+              <br>
+              <input type="number" name="utme-input" id="utme-input" class="input" min="0" max="400">
+              <br>
+              <label for="p-utme-input">
+                Post U.T.M.E Score
+              </label>
+              <br>
+              <input type="number" name="p-utme-input" id="p-utme-input" class="input" min="0" max="30" required>
+              <br>
+              <label>
+
+
+                <label for="bonus-input">
+                  mark for 1/2 sitting
+                </label>
+                <br>
+                <input type="number" name="bonus-input" id="bonus-input" class="input" min="0" max="5" required>
+                <br>
+                <label>
+
+
+                Select O'Level grades
+              </label>
+              <br>
+              <div id="select-wrap">
+                <select class="waec-grades">
+                  <option value="3.0">A1</option>
+                  <option value="2.5">B2</option>
+                  <option value="2.0">B3</option>
+                  <option value="1.5">C4</option>
+                  <option value="1.0">C5</option>
+                  <option value="0.5">C6</option>
+                </select>
+                <select class="waec-grades">
+                  <option value="3.0">A1</option>
+                  <option value="2.5">B2</option>
+                  <option value="2.0">B3</option>
+                  <option value="1.5">C4</option>
+                  <option value="1.0">C5</option>
+                  <option value="0.5">C6</option>
+                </select> 
+                <select class="waec-grades">
+                  <option value="3.0">A1</option>
+                  <option value="2.5">B2</option>
+                  <option value="2.0">B3</option>
+                  <option value="1.5">C4</option>
+                  <option value="1.0">C5</option>
+                  <option value="0.5">C6</option>>
+                </select>
+                <select class="waec-grades">
+                  <option value="3.0">A1</option>
+                  <option value="2.5">B2</option>
+                  <option value="2.0">B3</option>
+                  <option value="1.5">C4</option>
+                  <option value="1.0">C5</option>
+                  <option value="0.5">C6</option>
+                </select>
+                <select class="waec-grades">
+                  <option value="3.0">A1</option>
+                  <option value="2.5">B2</option>
+                  <option value="2.0">B3</option>
+                  <option value="1.5">C4</option>
+                  <option value="1.0">C5</option>
+                  <option value="0.5">C6</option>
+                </select>
+              </div>
+              <input type="submit" value="Calculate" id="submit" class="input activate">
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>Made for <div id="logo"> <img src="images/logoyct.png" alt="Unilag Logo"></div> <br>by  Olukoya Modesayo, <a href="https://clintonpi.github.io" target="_blank"> </br> ref from Clinton Nkwocha</br> </a>
+        </p>
+      </footer>
+      <div id="info">
+        <p>Check your post UTME score <a href="https://portal.yabatech.edu.ng/erpay/resultchecker/" target="_blank" rel="noopener">here</a>.</p>
+        <p>Check the cut-off mark for your course <a href="./yct-cut-off-mark-2020-2021.pdf" target="_blank" rel="noopener">here</a>.</p>
+        
+    </div>
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>

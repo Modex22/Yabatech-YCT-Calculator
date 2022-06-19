@@ -1,0 +1,39 @@
+{
+  "name": "yabatech-calc",
+  "version": "1.5.0",
+  "description": "An admission aggregate calculator for Yaba college of technology",
+  "main": "",
+  "scripts": {
+    "build": "babel js -d dist/js",
+    "clean": "rm -r dist && mkdir dist",
+    "clean-build": "npm run clean && npm run build",
+    "lint": "eslint ./ || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Modex22/Yabatech-YCT-Calculator.git"
+  },
+  "keywords": [
+    "yaba college of technology",
+    "yabatech",
+    "yabatech-calc",
+    "admission aggregate calculator",
+    "admission",
+    "aggregate",
+    "calculator"
+  ],
+  "author": "Olukoya Modesayo sited from Clinton Nkwocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Modex22/Yabatech-YCT-Calculator/issues"
+  },
+  "homepage": "https://github.com/Modex22/Yabatech-YCT-Calculator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
+
